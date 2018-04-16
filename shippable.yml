@@ -9,7 +9,7 @@ python:
   - 2.7
 
 build:
-   pre_ci_boot:
+  pre_ci_boot:
     image_name: drydock/w16
     image_tag: master
     pull: true
