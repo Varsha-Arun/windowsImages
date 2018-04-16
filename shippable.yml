@@ -52,7 +52,7 @@ jobs:
         #- script: ./GET/infra-repo/infra-repo/provision.sh
     always:
       - script: echo "This works on_always"
-      - NOTIFY: notify-slack1
+      - NOTIFY: notify-slack1win
       
 triggers:
    - name: triggersp1win
