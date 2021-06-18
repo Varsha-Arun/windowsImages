@@ -1,0 +1,13 @@
+pipelines:
+  - name: win_Master_test_pipe_var
+    configuration:
+      nodePool: win_2019
+    steps:
+      - name: win_Upload_to_artifactory_var
+        type: PowerShell
+        execution:
+          onExecute:
+            - Get-Variable | format-table
+            - docker images
+#             - echo automation > test.sh
+#             - jfrog rt u test.sh example-repo-local/setup/test.sh
